@@ -51,6 +51,13 @@ Now try adding 'computational' and 'thinking'. What is the difference between th
 print('computational'+'thinking')
 ```
 
+### 1.2 Understanding algorithms
+
+A simple way to represent an algorithm can be through a flowchart. Looking at the representation of a car park below, by following the steps of the flowchart you should be able to find out how many cars are at the exit, entrance and inside at the end.
+
+<center><img src="../carpark.png" width=800px><center>
+
+  
 ## 2. Decomposition
 
 Decomposition refers to the process of breaking down a complex problem into smaller, simpler subproblems. The idea is to solve each subproblem independently 
@@ -64,7 +71,9 @@ solves a smaller issue which may be relevant elsewhere.
 
 ## 3. Pattern recognition
 
+Pattern recognition involves finding the similarities or patterns among small, decomposed problems that can help us solve more complex problems more efficiently. Once a problem has been broken down into simpler subproblems, there may be similarities among these subproblems that mean we do not have a write a solution twice. These patterns may exist both between and within individual problems.
 
+  
 
 ## 4. Abstraction
 
