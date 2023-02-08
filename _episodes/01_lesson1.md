@@ -17,16 +17,19 @@ Real computational tasks are complicated. To accomplish them you need to **THINK
 In small groups discuss what you think the most important elements to think about before writing a program are: 
  * question to prompt
 
+-----
 
 ## 1. What is an algorithm? What is a program?
 
 An algorithm is a sequence of steps that solve a specific problem. A program is a sequence of instructions that tells the computer to do something. They differ from each other in that an algorithm will solve the problem while a program implements an algorithm in a form that a computer can execute.
 
+Although we might think of algorithms as complicated things used by programmers, in fact algorithms are essentially used by people everyday to complete tasks and can be incredibly simple. The method of a carbonara recipe is a sort of algorithm designed to assemble certain elements into a meal. 
+
 ### 1.1 Implementation vs algorithm
 
 Being an efficient programmer is not only about writing code - it is about solving problems in a way that is translatable to a computer. Often what people think of as a problem with code writing is in fact a problem with the algorithm. Consider the exercise below:
 
-🏃‍♀️ **Activity: addition** 
+🏃‍♀️ **Activity: Addition** 
 
 Create a program that asks a user for x and y values and then returns the sum of them.
 
@@ -63,12 +66,14 @@ Design a flowchart for the game. The total number of board squares should be 100
 
 If you want to create the flowchart online you can use this website (used to create the above flowchart)
 
+-----
 
 When designing an algorithm there are certain elements that make algorithmic problem-solving more efficient:
 * decomposition
 * pattern recognition
 * abstraction
 
+-----
 
 ## 2. Decomposition
 
@@ -80,7 +85,7 @@ solves a smaller issue which may be relevant elsewhere.
 
 🏃‍♀️ **Activity: Caesar cypher** 
 
-In cryptography, a Caesar cipher is a very simple encryption techniques in which each letter in the plain text is replaced by a letter some fixed number of positions down the alphabet. For example, with a shift of 3, A would be replaced by D, B would become E, and so on. The method is named after Julius Caesar, who used it to communicate with his generals. ROT-13 ("rotate by 13 places") is a widely used example of a Caesar cipher where the shift is 13. In Python, the key for ROT-13 may be represented by means of the following dictionary:
+In cryptography, a Caesar cipher is a very simple encryption technique in which each letter in the plain text is replaced by a letter some fixed number of positions down the alphabet. For example, with a shift of 3, A would be replaced by D, B would become E, and so on. The method is named after Julius Caesar, who used it to communicate with his generals. ROT-13 ("rotate by 13 places") is a widely used example of a Caesar cipher where the shift is 13. In Python, the key for ROT-13 may be represented by means of the following dictionary:
 
 ```
 key = {'a':'n', 'b':'o', 'c':'p', 'd':'q', 'e':'r', 'f':'s', 'g':'t', 'h':'u', 
@@ -92,6 +97,15 @@ key = {'a':'n', 'b':'o', 'c':'p', 'd':'q', 'e':'r', 'f':'s', 'g':'t', 'h':'u',
        'W':'J', 'X':'K', 'Y':'L', 'Z':'M'}
 ```
 
+In R, this dictionary is equivalent to the dataframe:
+
+```
+key <- data.frame(start = letters, 
+                  shift = c(letters[14:26],
+                            letters[1:13]))
+```
+
+
 Your task in this exercise is to implement an encoder/decoder of ROT-13. Once you're done, you will be able to read the following message:
 
 ```
@@ -102,12 +116,13 @@ How does the idea of decomposition apply here? What would you do to implement th
 
 Credits: [Torbjorn Lager](https://www.gu.se/en/about/find-staff/torbjornlager)
 
+-----
 
 ## 3. Pattern recognition
 
 Pattern recognition involves finding the similarities or patterns among small, decomposed problems that can help us solve complex problems more efficiently. Once a problem has been broken down into simpler subproblems, there may be similarities among these that mean we do not have a write a solution twice. These patterns may exist both between and within individual problems.
 
-🏃‍♀️ **Activity: the swap puzzle** 
+🏃‍♀️ **Activity: The swap puzzle** 
 
 Place small coins heads up on the squares marked H and tails up on the squares marked T.
 Swap the positions of the Heads for the Tails in as few moves as possible.
@@ -158,6 +173,8 @@ Credits: [Fabrizio Smeraldi](https://github.com/fsmeraldi/cp-flowcontrol/blob/ma
 
 Once you have recognised a pattern, you may either be able to reuse a previously written function to help solve a different problem, or it may be that you can iterate the same solution.... 
 
+-----
+
 ## 4. Abstraction
 
 Programming is about creating and composing abstractions. Abstraction works by establishing a level of complexity at which a person interacts with a system, suppressing the more complex details below the current level. Abstraction allows programmers to define objects and functions that can interact with each other in a predictable way without having to understand the underlying details of their implementation. 
@@ -179,5 +196,10 @@ On the cross shaped board below, a chess Knight can move two spaces in one direc
 
 ![knightstour](../images/knights_tour.png)
 
-Are these problems similar? How might you represent the Knight's tour in a different way to simplify finding a solution?
+Are these problems similar? How might you represent the Knight's Tour in a different way to simplify finding a solution?
+
+-----
+
+## Take-home messages:
+
 
