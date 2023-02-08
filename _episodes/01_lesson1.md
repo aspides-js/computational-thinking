@@ -116,6 +116,8 @@ How does the idea of decomposition apply here? What would you do to implement th
 
 Credits: [Torbjorn Lager](https://www.gu.se/en/about/find-staff/torbjornlager)
 
+Note: Because there are 26 letters (2×13) in the basic Latin alphabet, ROT13 is its own inverse; that is, to undo ROT13, the same algorithm is applied, so the same action can be used for encoding and decoding.
+
 -----
 
 ## 3. Pattern recognition
@@ -199,7 +201,4 @@ On the cross shaped board below, a chess Knight can move two spaces in one direc
 Are these problems similar? How might you represent the Knight's Tour in a different way to simplify finding a solution?
 
 -----
-
-## Take-home messages:
-
 
